@@ -5,6 +5,7 @@ import ExampleTwo from './components/exampleTwo/'
 import ExampleTree from './components/exampleTree/'
 import ExampleFour from './components/exampleFour/'
 import ExampleFive from './components/exampleFive/'
+import ExampleSix from './components/exampleSix/'
 
 class App extends Component {
   render() {
@@ -22,9 +23,13 @@ class App extends Component {
           <ExampleTwo type="outline"/>
           <ExampleTree/>
           <ExampleFour/>
-          <ExampleFive type="Horizontal"/>
-          <ExampleFive type="Vertical"/>
-          <ExampleFive type="Diagonal"/>
+          <ExampleFive type="horizontal"/>
+          <ExampleFive type="vertical"/>
+          <ExampleFive type="diagonal"/>
+          <ExampleFive type="dinamicDiagonal"/>
+          <ExampleSix/>
+          <ExampleSix type="gridTwo" />
+          <ExampleSix type="gridTree" />
         </div>
       </div>
     );
