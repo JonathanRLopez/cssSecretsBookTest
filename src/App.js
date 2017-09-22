@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import './App.css';
 import ExampleOne from './components/exampleOne/'
 import ExampleTwo from './components/exampleTwo/'
+import ExampleTree from './components/exampleTree/'
+import ExampleFour from './components/exampleFour/'
+import ExampleFive from './components/exampleFive/'
 
 class App extends Component {
   render() {
@@ -17,6 +20,11 @@ class App extends Component {
           <ExampleOne />
           <ExampleTwo type="box-shadow"/>
           <ExampleTwo type="outline"/>
+          <ExampleTree/>
+          <ExampleFour/>
+          <ExampleFive type="Horizontal"/>
+          <ExampleFive type="Vertical"/>
+          <ExampleFive type="Diagonal"/>
         </div>
       </div>
     );
