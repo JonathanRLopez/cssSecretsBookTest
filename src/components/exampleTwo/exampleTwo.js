@@ -33,12 +33,11 @@ const Container = glamorous.div({
 class exampleTwo extends Component {
   render() {
     const { type } = this.props
-    console.log(type)
     return (
       <Container>
         <H2 color="#ffffff" margin="0 0">Multiple Borders</H2>
         <SubContainer type={type}>
-          {type}
+           example made with: {type}
         </SubContainer>   
       </Container>
     );
