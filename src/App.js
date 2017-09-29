@@ -6,6 +6,8 @@ import ExampleTree from './components/exampleTree/'
 import ExampleFour from './components/exampleFour/'
 import ExampleFive from './components/exampleFive/'
 import ExampleSix from './components/exampleSix/'
+import ExampleSeven from './components/exampleSeven/'
+import ExampleEight from './components/exampleEight/'
 
 class App extends Component {
   render() {
@@ -30,6 +32,12 @@ class App extends Component {
           <ExampleSix/>
           <ExampleSix type="gridTwo" />
           <ExampleSix type="gridTree" />
+          <ExampleSix type="polkaDotOne" />
+          <ExampleSix type="checkerboardOne" />
+          <ExampleSeven />
+          <ExampleEight type="one"/>
+          <ExampleEight type="two"/>
+          <ExampleEight type="tree"/>
         </div>
       </div>
     );

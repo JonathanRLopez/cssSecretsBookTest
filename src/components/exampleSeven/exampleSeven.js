@@ -1,17 +1,19 @@
 import React, { Component } from 'react';
 import glamorous, {H2} from 'glamorous'
-import {patterns} from './styles.css'
 
 const SubContainer = glamorous.div(
   {
+    background: `linear-gradient(90deg, #fb3 11px, transparent 0),
+    linear-gradient(90deg, #ab4 23px, transparent 0),
+    linear-gradient(90deg, #655 41px, transparent 0)`,
+    backgroundSize: '41px 100%, 61px 100%, 83px 100%',
     width: '80%',
     height: '75%',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
     color: 'black',
-  },
-  props => patterns[props.type] || patterns.gridOne
+  }
 )
 
 const Container = glamorous.div({
@@ -24,13 +26,10 @@ const Container = glamorous.div({
 
 class exampleSix extends Component {
   render() {
-    const {type} = this.props
     return (
       <Container>
-        <H2 color="#ffffff" margin="0 0">Complex Bg Pattern</H2>
-        <SubContainer type={type}>
-          {type || 'grid'} Pattern
-        </SubContainer>   
+        <H2 color="#ffffff" margin="0 0">(Pseudo)random bg</H2>
+        <SubContainer />   
       </Container>
     );
   }
